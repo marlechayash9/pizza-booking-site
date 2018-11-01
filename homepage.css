@@ -1,0 +1,73 @@
+nav {
+    background: rgb(37, 129, 216);
+    padding: 30px;
+    height: 100px;
+}
+
+ul a {
+    color: white;
+}
+
+li {
+    float: left;
+}
+
+li.website {
+    justify-content: center;
+    align-content: center;
+    /* vertical-align: bottom; */
+    display: inline-block;
+    /* font-size: 40px; */
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin : 0;
+    padding : 0;
+}
+
+li a{
+    display: block;
+    color: white;
+    margin : 30px;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: gray;
+}
+
+li :nth-last-child(0), li:nth-last-child(1) {
+    float: none;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+img {
+    object-fit: cover; 
+    height: 100px; 
+    width: 100px;
+    display: inline-block;
+    float: left;
+}
+
+p {
+    text-align: center;
+    size: 20px;
+    font-family: fantasy;
+}
+div {
+    text-align: center;
+    border: 1px solid rgb(6, 131, 139);
+    padding: 25px;
+    margin: 25px;
+    /* float: left; */
+    box-shadow: 5px 10px #888888;
+}
+
+.offer1, .offer2 {
+    text-align: center;
+    display: inline-block
+}
