@@ -27,11 +27,11 @@ li a{
     text-decoration: gray;
 }
 
-li :nth-last-child(0), li:nth-last-child(1) {
+/* li :nth-last-child(0), li:nth-last-child(1) {
     float: none;
     vertical-align: bottom;
     display: inline-block;
-}
+} */
 
 img {
     object-fit: cover; 
