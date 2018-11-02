@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>
+        Cart
+    </title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <nav id="mainNavbBar">
+        <img src="pizza.jpg">
+        <ul id="navbar">
+            <li class="website"><a href="homepage.html">Pizza website</a></li>
+            <li id="menu"><a href="menu.html">Menu</a></li>
+            <li id="sign"><a href="signup.html">Sign In</a></li>
+            <li id="cart"><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <br>
+    <p>
+        Cart
+    </p>
+    <table style="width: 50%" id="cartTable">
+        <tr>
+          <td><b>Item</b></td>
+          <td><b>Quantity</b></td> 
+          <td><b>Amount</b></td>
+        </tr>
+        <tr>
+          <td>Farmhouse</td>
+          <td>1</td> 
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Margherita</td>
+          <td>2</td> 
+          <td>1000</td>
+        </tr>
+      </table>
+      <p id="total">Total: 1500</p>
+      <form action="thankyou.html">
+        <input type="submit" value="Checkout" id="checkoutButton"/>
+    </form>
+    </body>
+
+</html>
