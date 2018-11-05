@@ -4,10 +4,22 @@ nav {
     height: 100px;
 }
 
+ul a {
+    color: white;
+}
 
 li {
     float: left;
 }
+
+li.website {
+    justify-content: center;
+    align-content: center;
+    /* vertical-align: bottom; */
+    display: inline-block;
+    /* font-size: 40px; */
+}
+
 ul {
     list-style-type: none;
     text-align: right;
@@ -41,16 +53,21 @@ img {
     float: left;
 }
 
+p {
+    text-align: center;
+    size: 20px;
+    font-family: fantasy;
+}
 div {
     text-align: center;
     border: 1px solid rgb(6, 131, 139);
     padding: 25px;
-    align-self: center;
     margin: 25px;
-    float: left;
+    /* float: left; */
     box-shadow: 5px 10px #888888;
 }
 
-p {
+.offer1, .offer2 {
     text-align: center;
+    display: inline-block
 }
