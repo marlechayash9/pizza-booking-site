@@ -264,7 +264,7 @@ a:hover,a:focus{ text-decoration: none}
 }
 
 /* Header */
-header{background: url(../images/header_bg.jpg)no-repeat;background-size: 100% 100%; color: #f1f1f1;overflow: hidden;}
+header{background: url(../images/fpizza2.jpg)no-repeat;background-size: 100% 100%; color: #eca15a;overflow: hidden;}
 nav.navbar.bootsnav {
     background-color: #444;
     border: 0 none;
@@ -289,9 +289,9 @@ nav.navbar.bootsnav {
 }
 .banner > h3 {
     font-size: 32px;
-    letter-spacing: 16px;
+    letter-spacing: 9px;
     text-align: center;
-    color: #f1f1f1;
+    color: #252321;
 }
 .banner h1 {
     text-align: center;
@@ -303,11 +303,13 @@ nav.navbar.bootsnav {
 }
 .banner_content {
     float: left;
-    font-size: 12px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
     line-height: 15px;
     margin-right: 20px;
     width: 330px;
-    padding-top:60px;
+    padding-top:170px;
 }
 .banner_content p {
     margin-bottom: 15px;
@@ -328,10 +330,10 @@ header .caption {
 
 /* First Secition */
 /* Feature */
-.feature{background: url(../images/feature_bg.jpg)no-repeat;background-size: 100% 100%;height: 360px;overflow:hidden;margin-top: 100px;}
-.shack_burger {
-    float: right;
-    margin-right: 20px;
+.feature{background: url(../images/cbpizza.jpg)no-repeat;background-size: 100% 100%;height: 360px;color: #ffffff;overflow:hidden;margin-top: 100px;}
+.bbq_pizza {
+    float: left;
+    margin-left: 20px;
     width: 255px;
 }
 .chicken {
@@ -339,7 +341,7 @@ header .caption {
     margin: 22px auto 0;
     width: 120px;
 }
-.shack_burger > h2 {
+.bbq_pizza > h2 {
     margin-bottom: 20px;
     text-align: center;
 }
