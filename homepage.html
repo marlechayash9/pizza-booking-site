@@ -1,168 +1,89 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Home</title>
-		<style type="text/css">
-		
-			body {
-				margin:0;
-				padding:0;
-				font-family: Sans-Serif;
-				line-height: 1.5em;
-            }
-            
-li {
-    float: left;
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Playfair Display";
+	color:black;
+	font-size: 50px;
+    letter-spacing: 5px;
 }
-ul {
-    list-style-type: none;
-    text-align: right;
-    margin : 0;
-    padding : 0;
-}
+</style>
+<body>
 
-li a{
-    display: block;
-    color: white;
-    margin : 30px;
-    align-items: center;
-    align-content: center;
-    padding: 10px;
-    display: inline-block;
-    /* vertical-align: bottom; */
-    text-decoration: gray;
-    }
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Pizza booking site</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+	  <a href="signup.html" class="w3-bar-item w3-button">Sign up</a>
+      <a href="cart.html" class="w3-bar-item w3-button">Cart</a>
+    </div>
+  </div>
+</div>
 
-			
-			header {
-				background: rgb(94, 94, 151);
-				height: 100px;
-			}
-			
-			header h1 {
-				margin: 0;
-				padding-top: 15px;
-			}
-			
-			main {
-				padding-bottom: 10010px;
-				margin-bottom: -10000px;
-				float: left;
-				width: 100%;
-			}
-			
-			nav {
-				padding-bottom: 10010px;
-				margin-bottom: -10000px;
-				float: left;
-				width: 230px;
-				margin-left: -230px;
-				background: #eee;
-			}
-			
-			footer {
-				clear: left;
-				width: 100%;
-				background: #ccc;
-				text-align: center;
-				padding: 4px 0;
-			}
-	
-			#wrapper {
-				overflow: hidden;
-			}
-						
-			#content {
-				margin-right: 230px; /* Same as 'nav' width */
-			}
-			
-			.innertube {
-				margin: 15px; /* Padding for content */
-				margin-top: 0;
-			}
-		
-			p {
-				color: #555;
-			}
-	
-			nav ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			
-			nav ul a {
-				color: darkgreen;
-				text-decoration: none;
-			}
-		
-		</style>
-	
-	</head>
-	
-	<body>		
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="pizzanew.jpeg "alt = "Hamburger Catering" width="1800" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Pizza Booking Site</h1>
+  </div>
+</header>
 
-		<header>
-			<div class="innertube">
-				<h1>
-                    <ul>
-						<li><a href="homepage.html">Home</a></li>
-						<li><a href="menu.html">Menu</a></li>
-						<li><a href="cart.html">Cart</a></li>
-						<li><a href="signup.html">Sign Up</a></li>
-                    </ul>
-                </h1>
-			</div>
-		</header>
-		
-		<div id="wrapper">
-		
-			<main>
-				<div id="content">
-					<div class="innertube">
-						<h1>Heading</h1>
-						<p><script>generateText(20)</script></p>
-					</div>
-				</div>
-			</main>
-			
-			<nav>
-				<div class="innertube">
-					<h3>Right heading</h3>
-					<ul>
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
-						<li><a href="#">Link 4</a></li>
-						<li><a href="#">Link 5</a></li>
-					</ul>
-					<h3>Right heading</h3>
-					<ul>
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
-						<li><a href="#">Link 4</a></li>
-						<li><a href="#">Link 5</a></li>
-					</ul>
-					<h3>Right heading</h3>
-					<ul>
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
-						<li><a href="#">Link 4</a></li>
-						<li><a href="#">Link 5</a></li>
-					</ul>
-				</div>
-			</nav>
-		
-		</div>
-		
-		<footer>
-			<div class="innertube">
-				<p>Footer...</p>
-			</div>
-		</footer>
-	
-	</body>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="peepeat.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Our motto</h1><br>
+      <h5 class="w3-center">Insert Richa's motto here</h5>
+  	</div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center"><a href="menu.html" class="w3-bar-item w3-button">Menu</a></h1><br>
+      <h4>Margherita</h4>
+      <p class="w3-text-grey">The absolute classic cheese pizza - $4.30</p><br>
+    
+      <h4>Tuna</h4>
+      <p class="w3-text-grey">Fishies swimmin on your pizza - $4.30</p><br>
+    
+      <h4>4 Cheese</h4>
+      <p class="w3-text-grey">Coz why not - $5.50</p><br>
+    
+      <h4>Pepperoni</h4>
+      <p class="w3-text-grey">American tomato lookin thing - $7.80</p><br>  
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="menupizza.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+ Don't eat too much.
+</footer>
+
+</body>
 </html>
