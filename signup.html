@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="signup.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="All.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    <img src="pizza.jpg">   
+        <div class="w3-top">
+                <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+                  <a href="homepage.html" class="w3-bar-item w3-button">Pizza booking site</a>
+                  <!-- Right-sided navbar links. Hide them on small screens -->
+                  <div class="w3-right w3-hide-small">
+                    <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+                    <a href="signup.html" class="w3-bar-item w3-button">Sign up</a>
+                    <a href="cart.html" class="w3-bar-item w3-button">Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="w3-col l6 w3-padding-large">
+              <img class = "w3-round w3-image w3-opacity-min" src="pizza.jpg"alt = "Pizza signup" width="700" height="700">
+            </div>
     <br>
     <div> 
         <div class="signup">
@@ -26,14 +39,14 @@
                 <label>    
                     Password:
                     <br>
-                    <input type="password">
+                    <input type="password" >
                 </label>
                 <br><br>
-                <input type="button" value = "Existing User" onclick="redirectToLogin()">
+                <input type="button" class="w3-button" value = "Existing User" onclick="redirectToLogin()">
                 <br><br>
-                <input type="submit">
+                <input type="submit" class="w3-button">
                 <br><br>
-                <input type="reset">
+                <input type="reset" class="w3-button">
             </form>
         </div>
     </div>
