@@ -5,16 +5,29 @@ var num = "No_of_pizzas";
 function add(idclick) {
     switch(idclick)
     {
-        case "Pepperoni" : sessionStorage.setItem(a,"Pepperoni");
+        case "Cheese" : sessionStorage.setItem(a,"Cheese");
                             alert("Added!");
                             break;
-        case "mag" : sessionStorage.setItem(a,"Margherita");
+        case "Gtom" : sessionStorage.setItem(a,"Garlic Tomato");
                     alert("Added!");
                     break;
-        case "4Cheese" : sessionStorage.setItem(a,"4 Cheese");
+        case "Pep" : sessionStorage.setItem(a,"Pepperoni");
                     alert("Added!");
                     break;
-        case "tuna" : sessionStorage.setItem(a,"Tuna");
+                    
+        case "BBQ" : sessionStorage.setItem(a,"BBQ Chicken");
+                    alert("Added!");
+                    break;
+        case "Olympus" : sessionStorage.setItem(a,"Mt. Olympus");
+                    alert("Added!");
+                    break;
+        case "Nebo" : sessionStorage.setItem(a,"Mt. Nebo");
+                    alert("Added!");
+                    break;
+        case "Everest" : sessionStorage.setItem(a,"Mt. Everest");
+                    alert("Added!");
+                    break;
+        case "Fuji" : sessionStorage.setItem(a,"Mt. Fuji");
                     alert("Added!");
                     break;
     }

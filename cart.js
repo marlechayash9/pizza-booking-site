@@ -7,10 +7,14 @@ function price(i) {
     // alert(sessionStorage.getItem(i));
     switch(sessionStorage.getItem(i))
     {
-        case "Pepperoni" : return "7.80";
-        case "Margherita" : return "4.30";
-        case "4 Cheese" : return "5.50";
-        case "Tuna" : return "4.30";
+        case "Cheese" : return "12";
+        case "Garlic Tomato" : return "15";
+        case "Pepperoni" : return "17";
+        case "BBQ Chicken" : return "20";
+        case "Mt. Olympus" : return "20";
+        case "Mt. Nebo" : return "20";
+        case "Mt. Everest" : return "22";
+        case "Mt. Fuji" : return "25";
     }
 }
 var trhead = document.createElement('tr');   
