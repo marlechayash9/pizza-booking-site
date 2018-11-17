@@ -1,54 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sign Up</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="All.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="All.css" />
+  <script src="main.js"></script>
 </head>
+<style>
+  body {font-family: "Times New Roman", Georgia, Serif;background-color: black}
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Playfair Display";
+            color:rgb(236, 179, 152);
+            
+            letter-spacing: 5px;
+        }
+        </style>
+
 <body>
-        <div class="w3-top">
-                <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-                  <a href="homepage.html" class="w3-bar-item w3-button">Pizza booking site</a>
-                  <!-- Right-sided navbar links. Hide them on small screens -->
-                  <div class="w3-right w3-hide-small">
-                    <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-                    <a href="signup.html" class="w3-bar-item w3-button">Sign up</a>
-                    <a href="cart.html" class="w3-bar-item w3-button">Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="w3-col l6 w3-padding-large">
-              <img class = "w3-round w3-image w3-opacity-min" src="pizza.jpg"alt = "Pizza signup" width="700" height="700">
-            </div>
-    <br>
-    <div> 
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="homepage.html" class="w3-bar-item w3-button">Pizza booking site</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+        <a href="signup.html" class="w3-bar-item w3-button">Sign up</a>
+        <a href="cart.html" class="w3-bar-item w3-button">Cart</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="signup">
+    <img class="w3-image w3-opacity-max " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000">
+    <div class="w3-display-topmiddle w3-padding-large ">
+      <h1 class="w3-xxlarge"><b> Pizza For All!</b></h1>
+      <div>
         <div class="signup">
-            Sign Up
+          <br>
+
+          <h1><b> Sign Up</b> </h1>
+          <br>
+
+          <form action="POST">
+            <label>
+              <h3> Email ID: </h3>
+
+              <input type="email">
+            </label>
+            <br><br>
+            <label>
+              <h3> Password: </h3>
+
+              <input type="password">
+            </label>
+            <br><br>
+            <h3> <input type="button" class="w3-button" value="Already An Existing User" onclick="redirectToLogin()"></h3>
+            <br>
+            <h4> <input type="submit" class="w3-button"> </h4>
+
+            <h4> <input type="reset" class="w3-button"> </h4>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  </div>
+
+  <br>
+  <!-- <div> 
+        <div class="signup">
+            <br>
+            <br>
+          <h1> Sign Up </h1>
             <br>
             <br>
             <form action="POST">
                 <label>    
-                    Email ID:  
-                    <br>
+                  <h3>  Email ID:  </h3>
+                   
                     <input type="email">
                 </label>
                 <br><br>
                 <label>    
-                    Password:
-                    <br>
+                   <h3 > Password: </h3>
+                    
                     <input type="password" >
                 </label>
                 <br><br>
-                <input type="button" class="w3-button" value = "Existing User" onclick="redirectToLogin()">
-                <br><br>
-                <input type="submit" class="w3-button">
-                <br><br>
-                <input type="reset" class="w3-button">
+              <h3>  <input type="button" class="w3-button" value = "Existing User" onclick="redirectToLogin()"></h3>
+                <br>
+               <h4> <input type="submit" class="w3-button"> </h4>
+                
+              <h4>  <input type="reset" class="w3-button"> </h4>
             </form>
         </div>
-    </div>
+    </div> -->
 </body>
+
 </html>
