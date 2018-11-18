@@ -4,10 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sign Up</title>
+  <title>Confirm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="All.css" />
-  <script src="main.js"></script>
 </head>
 <style>
   body {font-family: "Times New Roman", Georgia, Serif;background-color: black}
@@ -19,7 +18,7 @@
         }
         </style>
 
-<body>
+<body style="background-repeat: repeat">
 
   <div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
@@ -36,23 +35,14 @@
   </div>
   <br>
   <br>
-  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="signup">
-    <img class="w3-image w3-opacity-max " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000">
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px; background-repeat: repeat-y" id="signup">
+    <img class="w3-image w3-opacity-max " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000" style="background-repeat: repeat-y">
     <div class="w3-display-topmiddle w3-padding-large ">
       <br>
-      <div class="signup" style="font-size: 50px; id = "chk">
+      <div class="signup" style="font-size: 30px;" id = "chk">
         <script>
-
+          document.body.style.color = "pink"; 
           var b = sessionStorage.getItem("No_of_pizzas");
-          // This doesnt work
-          // var n = sessionStorage.getItem("name");
-          // alert(n);
-          // n.style.color = "rgb(236,179,152)";
-          // document.write("<h2>Name:</h2> "+n );
-
-
-
-          //this line works but the font is black
           document.write("<h2>Name:</h2> "+ sessionStorage.getItem("name"));
           document.write('<br>'); 
           document.write("<h2>Phone: </h2>"+ sessionStorage.getItem("phone"));
@@ -62,6 +52,7 @@
           document.write("<h2>Landmark: </h2>"+ sessionStorage.getItem("landmark"));
           document.write('<br>'); 
           document.write('<h2>Pizzas: </h2><br>'); 
+          // alert(b);
           for(i=1; i<=b; i++)
           {
 
@@ -69,15 +60,12 @@
            document.write('<br>'); 
           }
           </script>
-        <br>
-        <br>
-         <h1>Do you want to continue? </h1>
-         <br>
+          <br>
           <a href="thankyou.html">
-            <button class = "w3-padding" value="Yes" style="color: black;">YES</button>
+            <button class = "w3-padding w3-button" value="Yes" style="margin-top: 10%;  color: pink">CONFIRM</button>
         </a>  
         <a href="homepage.html">
-            <button class = "w3-padding" value="No" style="color: black; margin-left: 50%">NO</button>
+            <button class = "w3-padding w3-button" value="No" style="margin-top: 10%; color: pink">GO BACK</button>
         </a>
         </div>
     </div> 
@@ -86,9 +74,6 @@
   </div>
 
   <br>
-  <script>
-      sessionStorage.clear();
-  </script>
 </body>
 
 </html>
