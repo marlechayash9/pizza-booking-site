@@ -40,7 +40,27 @@
     <img class="w3-image w3-opacity-max " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000">
     <div class="w3-display-topmiddle w3-padding-large ">
       <br>
-      <div class="signup" style="font-size: 50px; color: pink">
+      <div class="signup" style="font-size: 50px; color: pink" id = "chk">
+        <script>
+
+          var b = sessionStorage.getItem("No_of_pizzas");
+          document.write("Name: "+ sessionStorage.getItem("name"));
+          document.write('<br>'); 
+          document.write("Phone: "+ sessionStorage.getItem("phone"));
+          document.write('<br>'); 
+          document.write("Address: "+ sessionStorage.getItem("add1") + "," + sessionStorage.getItem("add2") + "," + sessionStorage.getItem("add3"));  
+          document.write('<br>'); 
+          document.write("Landmark: "+ sessionStorage.getItem("landmark"));
+          document.write('<br>'); 
+          document.write('Pizzas: <br>'); 
+          for(i=1; i<=b; i++)
+          {
+           document.write(sessionStorage.getItem(i));
+           document.write('<br>'); 
+          }
+          </script>
+        <br>
+        <br>
           Do you want to continue?
           <br>
           <br>

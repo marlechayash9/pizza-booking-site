@@ -38,4 +38,6 @@ function add(idclick) {
     a.toString(a);
 
 }
-
+function store(id,value) {
+    sessionStorage.setItem(id,value);
+}

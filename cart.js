@@ -63,6 +63,6 @@ document.body.appendChild(table);
 var tot = document.createElement('p');
 tot.style.fontSize = "50px";
 tot.style.marginLeft = "75%";
-tot.style.marginTop = "-20%";
+tot.style.marginTop = "0%";
 tot.textContent = "Total: $"+total.toFixed(2);
 document.body.appendChild(tot);
