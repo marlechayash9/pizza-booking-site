@@ -51,7 +51,7 @@
       <!-- Right-sided navbar links. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
         <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-        <a href="signup.php" class="w3-bar-item w3-button">Sign up</a>
+        <a href="signup.php" class="w3-bar-item w3-button"onclick="sessionStorage.clear()">Logout</a>
         <a href="cart.html" class="w3-bar-item w3-button">Cart</a>
       </div>
     </div>
@@ -75,7 +75,9 @@
   </header>
 
   </div>
-
+  <script>
+    sessionStorage.clear();
+  </script>
   <br>
 </body>
 
