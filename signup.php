@@ -29,7 +29,7 @@
   <div class="header">
   	<h2>Sign up</h2>
   </div>
-  <form method="post" action="homepage.html">
+  <form method="post" action="signup.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   	  <label><h4>Username</h4></label>
@@ -49,8 +49,8 @@
 	  </div>
 	  <br>
   	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user"><h4>Sign Up!</h4></button>
-  	</div>
+			<button type="submit" class="btn" name="reg_user"><h4>Sign Up!</h4></button>
+		</div>
   	<p>
 		<h4>
   		Already a member? </h4><a href="login.php">Sign in</a>
