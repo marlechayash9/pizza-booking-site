@@ -2,6 +2,11 @@
 <html>
 
 <head>
+    
+        <title>Homepage</title>
+        
+        <link rel="icon" type="image/x-icon" href="pizzacopy.ico">
+       
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Confirm</title>
@@ -41,17 +46,17 @@
       <br>
       <div class="signup" style="font-size: 30px;" id = "chk">
         <script>
-          document.body.style.color = "pink"; 
+          document.body.style.color = "rgb(218, 216, 216)"; 
           var b = sessionStorage.getItem("No_of_pizzas");
-          document.write("<h2>Name:</h2> "+ sessionStorage.getItem("name"));
+          document.write("<h2><b>Name:</b></h2> "+ sessionStorage.getItem("name"));
           document.write('<br>'); 
-          document.write("<h2>Phone: </h2>"+ sessionStorage.getItem("phone"));
+          document.write("<h2><b>Phone: </b></h2>"+ sessionStorage.getItem("phone"));
           document.write('<br>'); 
-          document.write("<h2>Address: </h2>"+ sessionStorage.getItem("add1") + "," + sessionStorage.getItem("add2") + "," + sessionStorage.getItem("add3"));  
+          document.write("<h2><b>Address: </b></h2>"+ sessionStorage.getItem("add1") + "," + sessionStorage.getItem("add2") + "," + sessionStorage.getItem("add3"));  
           document.write('<br>'); 
-          document.write("<h2>Landmark: </h2>"+ sessionStorage.getItem("landmark"));
+          document.write("<h2><b>Landmark: <b></h2>"+ sessionStorage.getItem("landmark"));
           document.write('<br>'); 
-          document.write('<h2>Pizzas: </h2><br>'); 
+          document.write('<h2><b>Pizzas:</b> </h2>'); 
           // alert(b);
           for(i=1; i<=b; i++)
           {
@@ -62,10 +67,10 @@
           </script>
           <br>
           <a href="thankyou.html">
-            <button class = "w3-padding w3-button" value="Yes" style="margin-top: 10%;  color: pink">CONFIRM</button>
+            <button class = "w3-padding w3-button" value="Yes" style="margin-top: 10%;  color: rgb(236, 179, 152)">CONFIRM</button>
         </a>  
         <a href="homepage.html">
-            <button class = "w3-padding w3-button" value="No" style="margin-top: 10%; color: pink">GO BACK</button>
+            <button class = "w3-padding w3-button" value="No" style="margin-top: 10%; color: rgb(236, 179, 152)">GO BACK</button>
         </a>
         </div>
     </div> 

@@ -3,7 +3,7 @@ var p = document.getElementById('cartp');
 var b = sessionStorage.getItem("No_of_pizzas");
 table.style.width = "40%";
 table.style.padding = "100px";
-table.style.border = "5px solid black";
+table.style.border = "5px solid grey";
 // table.align = "center";
 table.style.margin = "0px auto";
 table.style.marginTop = "15%";
@@ -35,10 +35,10 @@ var trhead = document.createElement('tr');
 
 var tda = document.createElement('td');
 var tdb = document.createElement('td');
-tda.style.border = "1px solid black";
-tdb.style.border = "1px solid black";
-tda.style.fontSize = "70px";
-tdb.style.fontSize = "70px";
+tda.style.border = "1px solid grey";
+tdb.style.border = "1px solid grey";
+tda.style.fontSize = "60px";
+tdb.style.fontSize = "60px";
 
 tda.style.color = "rgb(236, 179, 152)";
 tdb.style.color = "rgb(236, 179, 152)";
@@ -64,8 +64,8 @@ for (var i = 1; i <= b; i++){
 
     td1.style.fontSize = "35px";
     td2.style.fontSize = "35px";
-    td1.style.border = "2px solid black";
-    td2.style.border = "2px solid black";
+    td1.style.border = "2px solid grey";
+    td2.style.border = "2px solid grey";
     var text1 = document.createTextNode(sessionStorage.getItem(i));
     var text2 = document.createTextNode("$"+price(i));
     total+= parseFloat(price(i));
