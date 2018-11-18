@@ -14,10 +14,12 @@ $sql = "CREATE DATABASE `pizza_db1` DEFAULT CHARACTER SET utf8 COLLATE utf8_gene
 
 // Performs the $sql query on the server to create the database
 if ($db->query($sql) === TRUE) {
-  echo 'Database "pizza_db1" successfully created';
+  ;
+  // echo 'Database "pizza_db1" successfully created';
 }
 else {
- echo 'Error: '. $db->error;
+  ;
+//  echo 'Error: '. $db->error;
 }
 
 // $db->close();
