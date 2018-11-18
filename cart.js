@@ -3,7 +3,7 @@ var p = document.getElementById('cartp');
 var b = sessionStorage.getItem("No_of_pizzas");
 table.style.width = "40%";
 table.style.padding = "100px";
-table.style.border = "10px solid black";
+table.style.border = "10px solid gray";
 // table.align = "center";
 table.style.margin = "0px auto";
 table.style.marginTop = "15%";
@@ -27,12 +27,17 @@ var trhead = document.createElement('tr');
 
 var tda = document.createElement('td');
 var tdb = document.createElement('td');
-tda.style.border = "1px solid black";
-tdb.style.border = "1px solid black";
+tda.style.border = "1px solid gray";
+tdb.style.border = "1px solid gray";
 tda.style.fontSize = "70px";
 tdb.style.fontSize = "70px";
+
+tda.style.color = "rgb(236, 179, 152)";
+tdb.style.color = "rgb(236, 179, 152)";
+
 var texta = document.createTextNode("Item");
 var textb = document.createTextNode("Price");
+
 tda.appendChild(texta);
     tdb.appendChild(textb);
     trhead.appendChild(tda);
@@ -45,10 +50,14 @@ for (var i = 1; i <= b; i++){
 
     var td1 = document.createElement('td');
     var td2 = document.createElement('td');
-    td1.style.fontSize = "50px";
-    td2.style.fontSize = "50px";
-    td1.style.border = "2px solid black";
-    td2.style.border = "2px solid black";
+
+    td1.style.color = "rgb(236, 179, 152)";
+    td2.style.color = "rgb(236, 179, 152)";
+
+    td1.style.fontSize = "35px";
+    td2.style.fontSize = "35px";
+    td1.style.border = "2px solid gray";
+    td2.style.border = "2px solid gray";
     var text1 = document.createTextNode(sessionStorage.getItem(i));
     var text2 = document.createTextNode("$"+price(i));
     total+= parseFloat(price(i));
@@ -64,5 +73,6 @@ var tot = document.createElement('p');
 tot.style.fontSize = "50px";
 tot.style.marginLeft = "75%";
 tot.style.marginTop = "0%";
+tot.style.color = "rgb(236, 179, 152)";
 tot.textContent = "Total: $"+total.toFixed(2);
 document.body.appendChild(tot);

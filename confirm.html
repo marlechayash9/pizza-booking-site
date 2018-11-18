@@ -40,31 +40,39 @@
     <img class="w3-image w3-opacity-max " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000">
     <div class="w3-display-topmiddle w3-padding-large ">
       <br>
-      <div class="signup" style="font-size: 50px; color: pink" id = "chk">
+      <div class="signup" style="font-size: 50px; id = "chk">
         <script>
 
           var b = sessionStorage.getItem("No_of_pizzas");
-          document.write("Name: "+ sessionStorage.getItem("name"));
+          // This doesnt work
+          // var n = sessionStorage.getItem("name");
+          // alert(n);
+          // n.style.color = "rgb(236,179,152)";
+          // document.write("<h2>Name:</h2> "+n );
+
+
+
+          //this line works but the font is black
+          document.write("<h2>Name:</h2> "+ sessionStorage.getItem("name"));
           document.write('<br>'); 
-          document.write("Phone: "+ sessionStorage.getItem("phone"));
+          document.write("<h2>Phone: </h2>"+ sessionStorage.getItem("phone"));
           document.write('<br>'); 
-          document.write("Address: "+ sessionStorage.getItem("add1") + "," + sessionStorage.getItem("add2") + "," + sessionStorage.getItem("add3"));  
+          document.write("<h2>Address: </h2>"+ sessionStorage.getItem("add1") + "," + sessionStorage.getItem("add2") + "," + sessionStorage.getItem("add3"));  
           document.write('<br>'); 
-          document.write("Landmark: "+ sessionStorage.getItem("landmark"));
+          document.write("<h2>Landmark: </h2>"+ sessionStorage.getItem("landmark"));
           document.write('<br>'); 
-          document.write('Pizzas: <br>'); 
+          document.write('<h2>Pizzas: </h2><br>'); 
           for(i=1; i<=b; i++)
           {
+
            document.write(sessionStorage.getItem(i));
            document.write('<br>'); 
           }
           </script>
         <br>
         <br>
-          Do you want to continue?
-          <br>
-          <br>
-          <br>
+         <h1>Do you want to continue? </h1>
+         <br>
           <a href="thankyou.html">
             <button class = "w3-padding" value="Yes" style="color: black;">YES</button>
         </a>  
