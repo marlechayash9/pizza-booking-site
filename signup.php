@@ -13,14 +13,14 @@
 
 	
 	<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="signup">
-    <img class="w3-image w3-opacity-min " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000">
+    <img class="w3-image w3-opacity-max " src="bg_3.jpg " alt="Pizza Catering" width="1850" height="1000">
     <div class="w3-display-topmiddle w3-padding-large ">
   <div class="header">
   	<h2>Sign up</h2>
   </div>
   <form method="post" action="signup.php">
   	<?php include('errors.php'); ?>
-  	<div class="w3-text-black">
+  	<div class="input-group">
   	  <label><h4>Username</h4></label>
   	  <input type="text" name="username" value="<?php echo $username; ?>">
   	</div>
@@ -41,8 +41,8 @@
 			<button type="submit" class="btn" name="reg_user"><h4>Sign Up!</h4></button>
 		</div>
   	<p>
-		<h4><b>
-  		Already a member? </h4><b><a href="login.php">Sign in</b></a></b>
+		<h4>
+  		Already a member? </h4><a href="login.php">Sign in</a>
   	</p>
   </form>
 </div>

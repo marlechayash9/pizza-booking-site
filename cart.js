@@ -16,7 +16,6 @@ btn.onclick = function () {
 btn.style.fontSize = "20px";
 btn.style.marginLeft = "120%";
 btn.style.marginTop = "-30%";
-btn.className = "btn";
 var total = 0;
 function price(i) {
     // alert(sessionStorage.getItem(i));
@@ -38,10 +37,8 @@ var tda = document.createElement('td');
 var tdb = document.createElement('td');
 tda.style.border = "1px solid grey";
 tdb.style.border = "1px solid grey";
-tda.style.fontSize = "30px";
-tdb.style.fontSize = "30px";
-tda.style.padding = "10px";
-tdb.style.padding = "10px";
+tda.style.fontSize = "60px";
+tdb.style.fontSize = "60px";
 
 tda.style.color = "rgb(236, 179, 152)";
 tdb.style.color = "rgb(236, 179, 152)";
@@ -65,10 +62,8 @@ for (var i = 1; i <= b; i++){
     td1.style.color = "rgb(236, 179, 152)";
     td2.style.color = "rgb(236, 179, 152)";
 
-    td1.style.fontSize = "25px";
-    td2.style.fontSize = "25px";
-    td1.style.padding = "10px";
-    td2.style.padding = "10px";
+    td1.style.fontSize = "35px";
+    td2.style.fontSize = "35px";
     td1.style.border = "2px solid grey";
     td2.style.border = "2px solid grey";
     var text1 = document.createTextNode(sessionStorage.getItem(i));
